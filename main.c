@@ -44,32 +44,6 @@ void vMillisIncrement(void)
 
 
 
-//void vMillisIncrement(void)
-//{
-//	/*called every 100 us
-//	 * 1ms = 1000 us
-//	 * count to 10 times to reach 1ms*/
-//
-//	static u16 u16_100uSecCounter;
-//	static u16 u16_100milliSecCounter;
-//
-//	u16_100uSecCounter++;
-//
-//	if(u16_100uSecCounter >= 10)
-//	{
-//		/*reached 1ms*/
-//		u16_100milliSecCounter++;
-//		u16_100uSecCounter = 0;
-//	}
-//
-//	if(u16_100milliSecCounter >= 1000)
-//	{
-//		/*call task handler*/
-//		u16_100milliSecCounter = 0;
-//		OS_Task_Handler();
-//
-//	}
-//}
 
 
 void InitScheduler(void)
